@@ -1,0 +1,30 @@
+<%- include('header.ejs') %>
+
+
+
+<div class="contain">
+    <a href="/addArticles"> <div class="btn btn-danger">Add Articles</div></a>
+</div>
+
+<div class="container">
+    <div class="row">
+        <% for( let i = 0; i < articules.length; i++ ) { %>
+            <div class="art col-md-4 text-center pt-5 pb-3 my-3 border">
+                <h2 class="bg-gray text-center "><%= articules[i].topic %> </h2>
+                <h3><%= articules[i].content %></h3>
+                <a href='/readMore/<%= articules[i].id %>'> <button class="btn btn-primary" >Read More</button>   </a>
+                <a href='/edit/<%= articules[i].id %>'> <button class="btn btn-info" >Edit</button>   </a>
+                <a href='/delete/<%= articules[i].id %>'> <button class="btn btn-danger" >Delete</button>   </a>
+                 <h6 class=" text-center mt-2"><%= articules[i].date %> </h6>
+    
+            </div>
+        
+        <% } %>
+       
+    </div>
+</div>
+
+
+
+
+<%- include('footer.ejs') %>

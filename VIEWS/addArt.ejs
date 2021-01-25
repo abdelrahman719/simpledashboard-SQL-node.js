@@ -1,0 +1,31 @@
+<%- include('header.ejs') %>
+
+
+
+<div class="contain">
+    <a href="/addArticles">
+        <h1>Adding Dashboard</h1>
+    </a>
+</div>
+
+<div class="container">
+    <form method="POST" action="/send" >
+        <div class="form-group">
+            <label for="exampleInputEmail1">Article Name</label>
+            <input type="text" name="topic" class="form-control" id="exampleInputEmail1" placeholder="Enter Article Name">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Artilce Content</label>
+            <textarea class="form-control" name="content" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+</div>
+
+
+
+
+<%- include('footer.ejs') %>

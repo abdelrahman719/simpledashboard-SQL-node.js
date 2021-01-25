@@ -1,0 +1,15 @@
+body
+{
+    
+    text-align: center;
+    font-family: 'Segoe ui light';
+}
+.bg-gray
+{
+    background-color: gray;
+}
+.art
+{
+    background-color: gainsboro;
+    border-radius: 20%;
+}

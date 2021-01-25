@@ -1,0 +1,29 @@
+<%- include('header.ejs') %>
+
+
+
+<div class="contain">
+  <h1>Editing Page</h1>
+</div>
+
+<div class="container">
+    <form method="POST" action="/update/<%= art.id %>" >
+        <div class="form-group">
+            <label for="exampleInputEmail1">Article Name</label>
+            <input value="<%- art.topic %>" type="text" name="topic" class="form-control" id="exampleInputEmail1" placeholder="Enter Article Name">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Artilce Content</label>
+            <input  value="<%- art.content %>" type="text" class="form-control" name="content" ></input>
+        </div>
+
+
+        <button class="btn btn-primary">Send Edit</button>
+    </form>
+</div>
+
+
+
+
+<%- include('footer.ejs') %>
